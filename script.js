@@ -20,3 +20,19 @@ function getComputerChoice() {
 
 getComputerChoice();
 console.log(computerChoice);
+
+
+/* 
+- Create function getHumanChoice. 
+- Prompt user for their choice. 
+- Store user choice in var userChoice 
+*/ 
+
+let userChoice; 
+
+function getUserChoice() {
+    userChoice = prompt("Rock, Paper, Scissors??")
+}
+
+getUserChoice();
+console.log(userChoice);
