@@ -1,12 +1,3 @@
-console.log("Hello World");
-
-/* 
-Create function getComputerChoice that returns rock if math.random equals <= 1/3, returns paper if 
-math.random > 1/3 and <= 2/3, else returns scissors. */ 
-
-
-
-
 function getComputerChoice() { 
     let computerChoice = Math.floor(Math.random() * 3);
     if(computerChoice === 1) {
@@ -20,32 +11,11 @@ function getComputerChoice() {
     return computerChoice;
 }
 
-
-/* 
-- Create function getHumanChoice. 
-- Prompt user for their choice. 
-- Store user choice in var userChoice 
-*/ 
-
-
 function getUserChoice() {
    let userChoice = prompt("Rock, Paper, Scissors??")
     console.log(`You: ${userChoice}`); 
     return userChoice;
 }
-
-
-
-/* 
-- Create playRound function which takes userChoice and computerChoice as arguments
-- convert both userChoice and computerChoice to lowercase.  
-- if user = rock & computer = scissors then alert "You win! Rock beats Scissors" // increment user
-- if user = paper & computer = rock then alert "You win! Paper beats Rock" // increment user 
-- if user = scissors & computer = paper then alert "You win! Scissors beats Paper" // increment user 
-- if user = rock & computer = paper then alert "You lose! Paper beats Rock" // increment computer 
-- if user = paper & scissors = paper then alert "You lose! Scissors beats Paper" // increment computer 
-- if user = scissors & computer = rock then alert "You lose! Rock beats Scissors" // increment computer
-*/ 
 
 function playRound(user, computer) {
     user = user.toLowerCase();
@@ -80,16 +50,6 @@ function playRound(user, computer) {
         return "draw";
     }
 }
-
-
-
-/* create new function playgame 
-- initialise a counter variable and set it to zero
-- while the counter is smaller than 5 play round (playRound)
-- get play round to return 'win' or 'lose', and store in var result 
-- if win, increment user; if lose, increment computer 
-
-*/
 
 function playGame() {
     let userScore = 0;
