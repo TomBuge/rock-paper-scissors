@@ -51,7 +51,7 @@ function playRound(user, computer) {
     }
 }
 
-function playGame() {
+/*function playGame() {
     let userScore = 0;
     let computerScore = 0;
     
